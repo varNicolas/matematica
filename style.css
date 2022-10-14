@@ -69,6 +69,11 @@ button.buttonShow {
     flex-direction: column;
     gap: 2rem;
   }
+  .areaLateral .desenvolvimento input,
+  .areaLateral .desenvolvimento .buttonShow
+  {
+padding: 1rem;
+  }
   .areaCalc{
     height: 40rem;
   }
