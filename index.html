@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Matematica</title>
+  </head>
+  <body>
+    <div class="areaTotal areaCalc light">
+      <div class="formula">
+        <h2>Area total</h2>
+      </div>
+      <div class="desenvolvimento">
+        <input
+          type="number"
+          id="numberAB"
+          placeholder="Valor da AREA DA BASE"
+        />
+        <input
+          type="number"
+          id="numberAL"
+          placeholder="Valor da AREA LATERAL"
+        />
+        <button onclick="calcAreaTotal()" class="buttonShow">show ME</button>
+      </div>
+      <div class="result">
+        <p id="resultAT" class="result"></p>
+      </div>
+    </div>
+
+    <div class="areaDaBase areaCalc">
+      <div class="formula">
+        <h2>Area da Base</h2>
+      </div>
+      <div class="desenvolvimento">
+        <select name="ab" id="selectAB">
+          <option value="trianguloEquilatero">Triângulo Equilatero</option>
+          <option value="quadrado">Quadrado</option>
+          <option value="hexagonoRegular">Hexagono Regular</option>
+        </select>
+        <input type="number" id="calcL" placeholder="Valor ARESTA DA BASE" />
+        <button onclick="calcAreaBase()" class="buttonShow">show ME</button>
+      </div>
+      <div class="result">
+        <p id="resultAB"></p>
+      </div>
+    </div>
+
+    <div class="areaLateral areaCalc light">
+      <div class="formula">
+        <h2>Area Lateral</h2>
+      </div>
+      <div class="desenvolvimento">
+        <input
+          type="number"
+          id="numberN"
+          placeholder="Nº de faces laterais"
+        />
+        <input
+          type="number"
+          id="numberL"
+          placeholder="ARESTA DA BASE"
+        />
+        <input
+          type="number"
+          id="numberH"
+          placeholder="ALTURA DO PRISMA"
+        />
+        <button onclick="calcAreaLateral()" class="buttonShow">show ME</button>
+      </div>
+      <div class="result">
+        <p id="resultAL" class="result"></p>
+      </div>
+    </div>
+
+    <div class="volume areaCalc">
+      <div class="formula">
+        <h2>Volume</h2>
+      </div>
+      <div class="desenvolvimento">
+        <input
+          type="number"
+          id="numAB"
+          placeholder="ARESTA DA BASE"
+        />
+        <input
+          type="number"
+          id="numH"
+          placeholder="ALTURA DO PRISMA"
+        />
+        <button onclick="calcVolume()" class="buttonShow">show ME</button>
+      </div>
+      <div class="result">
+        <p id="resultV" class="result"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
